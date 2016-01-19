@@ -2,7 +2,7 @@ package controller
 
 import (
 	"github.com/manyminds/api2go"
-	"github.com/testapi2go/model"
+	"github.com/tanmayambre/testapi2go/model"
 )
 
 type Blog struct {
