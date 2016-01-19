@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/manyminds/api2go"
-	"github.com/testapi2go/controller"
-	"github.com/testapi2go/model"
+	"github.com/tanmayambre/testapi2go/controller"
+	"github.com/tanmayambre/testapi2go/model"
 
 	"net/http"
 )
