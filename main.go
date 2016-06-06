@@ -10,7 +10,6 @@ import (
 
 func main() {
 	api := api2go.NewAPI("v1")
-	api.SetRedirectTrailingSlash(false)
 
 	api.AddResource(model.Author{}, &controller.Author{})
 	api.AddResource(model.Blog{}, &controller.Blog{})

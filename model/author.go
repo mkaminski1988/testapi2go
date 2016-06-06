@@ -31,11 +31,11 @@ func (author Author) GetReferences() []jsonapi.Reference {
 	return []jsonapi.Reference{
 		{
 			Type: "books",
-			Name: "books",
+			Name: "works",
 		},
 		{
 			Type: "blogs",
-			Name: "blogs",
+			Name: "works",
 		},
 	}
 }
@@ -47,7 +47,7 @@ func (author Author) GetReferencedIDs() []jsonapi.ReferenceID {
 		result = append(result, jsonapi.ReferenceID{
 			ID:   appid,
 			Type: "books",
-			Name: "books",
+			Name: "works",
 		})
 	}
 
@@ -55,7 +55,7 @@ func (author Author) GetReferencedIDs() []jsonapi.ReferenceID {
 		result = append(result, jsonapi.ReferenceID{
 			ID:   id,
 			Type: "blogs",
-			Name: "blogs",
+			Name: "works",
 		})
 	}
 	return result

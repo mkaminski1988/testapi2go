@@ -9,28 +9,27 @@ type Book struct {
 	book map[string]*model.Book
 }
 
-func (controller *Book) FindAll(request api2go.Request) (interface{}, error) {
-	return nil, api2go.NewHTTPError(nil, "This functionality has not been implemented", 400)
+// FindOne choc
+func (controller *Book) FindOne(ID string, r api2go.Request) (api2go.Responder, error) {
+	return &Response{Res: nil}, nil
 }
 
-func (controller *Book) FindOne(id string, request api2go.Request) (interface{}, error) {
-	return nil, api2go.NewHTTPError(nil, "This functionality has not been implemented", 400)
+// FindAll to satisfy api2go data source interface
+func (controller *Book) FindAll(r api2go.Request) (api2go.Responder, error) {
+	return &Response{Res: nil}, nil
 }
 
-func (controller *Book) FindMultiple([]string, api2go.Request) (interface{}, error) {
-	return nil, api2go.NewHTTPError(nil, "This functionality has not been implemented", 400)
+// Create method to satisfy `api2go.DataSource` interface
+func (controller *Book) Create(obj interface{}, r api2go.Request) (api2go.Responder, error) {
+	return &Response{Res: nil}, nil
 }
 
-func (controller *Book) Create(object interface{}, request api2go.Request) (string, error) {
-	return "", api2go.NewHTTPError(nil, "This functionality has not been implemented", 400)
-
+// Delete to satisfy `api2go.DataSource` interface
+func (controller *Book) Delete(id string, r api2go.Request) (api2go.Responder, error) {
+	return &Response{Res: nil}, nil
 }
 
-func (controller *Book) Delete(id string, request api2go.Request) error {
-	return api2go.NewHTTPError(nil, "This functionality has not been implemented", 400)
-
-}
-
-func (controller *Book) Update(object interface{}, request api2go.Request) error {
-	return api2go.NewHTTPError(nil, "This functionality has not been implemented", 400)
+//Update stores all changes on the user
+func (controller *Book) Update(obj interface{}, r api2go.Request) (api2go.Responder, error) {
+	return &Response{Res: nil}, nil
 }
